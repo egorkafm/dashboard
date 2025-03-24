@@ -40,15 +40,18 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ```
 src/
-├── api/              # API functions
-├── assets/           # Static assets (e.g. images, icons)
+├── api/              # API requests and TypeScript types
+├── assets/           # Static assets (images, icons, fonts, etc.)
 ├── components/       # Reusable UI components (Table, Drawer, Modal, etc.)
-├── hooks/            # Custom React hooks
-├── pages/            # Pages (Dashboard, Login, Profile, etc.)
+├── hooks/            # Custom React hooks (e.g. useDashboard, useDisclosure)
+├── pages/            # Application pages (Dashboard, Profile, Login, etc.)
+├── providers/        # Context providers
+├── routes/           # Route configuration and AppRoutes
 ├── store/            # Redux store and slices
-├── types/            # Shared TypeScript types
-├── App.tsx
-└── index.tsx
+├── styles/           # Global styles, variables, mixins (SASS)
+├── App.tsx           # Root component
+└── index.tsx         # Entry point of the application
+
 ```
 
 ---
@@ -102,7 +105,7 @@ The output will be in the `/build` folder — ready for deployment.
 
 ## 📝 License
 
-MIT © [Yehor Lashchenko](mailto:your@email.com)
+MIT © [Yehor Lashchenko](mailto:lashchenko.ys@gmail.com)
 
 ---
 

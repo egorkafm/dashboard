@@ -1,0 +1,65 @@
+@import "../../styles/mixins/breakpoints"
+
+.layout
+  min-height: 100vh
+
+.header
+  background: #fff
+  display: flex
+  align-items: center
+  height: 64px
+  padding: 0 16px
+  justify-content: space-between
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08)
+
+.drawerContainer
+  display: flex
+  flex-direction: column
+  height: 100%
+  padding: 16px
+
+.drawerHeader
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 24px
+
+.drawerMenu
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 16px
+  margin-top: 32px
+
+  a
+    font-size: 16px
+    color: #1677ff
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+  button
+    margin-top: 24px
+
+.sideMenu
+  margin-top: 50px
+
+.content
+  margin: 16px 0 0 0
+
+  @include respondTo(sm)
+    margin: 16px
+
+  @include respondTo(md)
+    margin: 24px
+
+.contentContainer
+  padding: 24px
+  background: #fff
+  border-radius: 8px
+  min-height: 360px
+
+.footer
+  text-align: center
+  background: #f0f2f5
+  padding: 16px

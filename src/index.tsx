@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import "./styles/index.scss";
+import "./styles/index.sass";
+import "./styles/overrides.sass";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -13,7 +15,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter basename="/dashboard">
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
 );

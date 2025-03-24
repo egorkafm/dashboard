@@ -3,7 +3,7 @@ import { Form, Input, Button, Typography } from "antd";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { useLogin } from "./hooks/useLogin";
 
-import styles from "./style.module.scss";
+import styles from "./style.module.sass";
 
 export const Login: FC = () => {
   const { handleLogin, loading } = useLogin();
@@ -38,7 +38,6 @@ export const Login: FC = () => {
         >
           <Input.Password prefix={<LockOutlined />} placeholder="Password" />
         </Form.Item>
-        <h2>emilyspass</h2>
         <Form.Item>
           <Button type="primary" htmlType="submit" loading={loading} block>
             Log In

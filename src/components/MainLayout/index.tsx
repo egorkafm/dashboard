@@ -11,7 +11,7 @@ import { Logo } from "../Logo";
 import { ConfirmModal } from "../ConfirmModal";
 import { useMainLayout } from "./hooks/useMainLayout";
 
-import styles from "./style.module.scss";
+import styles from "./style.module.sass";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -57,7 +57,7 @@ export const MainLayout: FC = () => {
           onClose={() => setDrawerOpen(false)}
           open={drawerOpen}
           width={240}
-          style={{ padding: 0 }}
+          style={{ padding: 0, outline: "none" }}
         >
           <div className={styles.drawerContainer}>
             <div className={styles.drawerHeader}>

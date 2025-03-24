@@ -11,7 +11,13 @@ interface UserDrawerProps {
 
 export const UserDrawer: FC<UserDrawerProps> = ({ open, user, onClose }) => {
   return (
-    <Drawer title="User Info" open={open} onClose={onClose} width={400}>
+    <Drawer
+      title="User Info"
+      open={open}
+      onClose={onClose}
+      width={400}
+      style={{ outline: "none" }}
+    >
       {user && (
         <>
           <Flex justify="center" style={{ marginBottom: 24 }}>

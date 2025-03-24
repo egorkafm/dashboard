@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useAuth } from "../../hooks/useAuth";
 
-import styles from "./style.module.scss";
+import styles from "./style.module.sass";
 
 export const Profile: FC = () => {
   const { user } = useAuth();
