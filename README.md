@@ -67,6 +67,21 @@ src/
 
 ---
 
+## 🔐 API
+
+This app uses the [DummyJSON Auth API](https://dummyjson.com/docs/auth) to simulate login functionality.
+
+### 🔑 Test Credentials
+
+```
+username: emilys
+password: emilyspass
+```
+
+You can also find additional users and passwords in the [DummyJSON Users List](https://dummyjson.com/users).
+
+---
+
 ## 🌍 Environment Variables
 
 Create a `.env` file in the root of the project with the following:
