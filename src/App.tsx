@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import { NotificationProvider } from "./providers/NotificationProvider";
 import { AppErrorBoundary } from "./components/ErrorBoundary";
 import { AppRoutes } from "./routes/AppRoutes";
@@ -9,7 +10,9 @@ function App() {
   return (
     <AppErrorBoundary>
       <NotificationProvider>
-        <AppRoutes />
+        <Router>
+          <AppRoutes />
+        </Router>
       </NotificationProvider>
     </AppErrorBoundary>
   );

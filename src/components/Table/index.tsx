@@ -18,6 +18,7 @@ export const Table = <T extends { id: string | number }>({
           showSizeChanger: true,
           showLessItems: true,
           pageSizeOptions: ["5", "10", "25"],
+          defaultPageSize: 5,
           ...props.pagination,
         }}
         scroll={!screens.md ? { x: "max-content" } : undefined}
